@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="./funct.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="row">
+            <div class="column"><img class="Profile"
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/78/Image.jpg?20150517131218" alt="image">
+                <p><svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M364.2 83.8c-24.4-24.4-64-24.4-88.4 0l-184 184c-42.1 42.1-42.1 110.3 0 152.4s110.3 42.1 152.4 0l152-152c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-152 152c-64 64-167.6 64-231.6 0s-64-167.6 0-231.6l184-184c46.3-46.3 121.3-46.3 167.6 0s46.3 121.3 0 167.6l-176 176c-28.6 28.6-75 28.6-103.6 0s-28.6-75 0-103.6l144-144c10.9-10.9 28.7-10.9 39.6 0s10.9 28.7 0 39.6l-144 144c-6.7 6.7-6.7 17.7 0 24.4s17.7 6.7 24.4 0l176-176c24.4-24.4 24.4-64 0-88.4z" />
+                    </svg> https://github.com/john_doe</p>
+            </div>
+            <div class="column">
+                <h1>John Doe</h1>
+                <p>Bio goes here</p>
+                <p><svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                            d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                    </svg> Oriando</p>
+                <p></p>
+                <a href="https://twitter.com/john_doe">Twitter: https://twitter.com/john_doe</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Add this inside the main section, before the ul element -->
+        <div class="pagination-controls">
+            <label for="pageSize">Repositories per page:</label>
+            <select id="pageSize" onchange="changePageSize()">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+
+            <label for="search">Search:</label>
+            <input type="text" id="search" oninput="filterRepositories()">
+        </div>
+
+        <section id="heroes">
+            <ul>
+                <div class="row">
+                    <div class="column2">
+                        <li class="boxx"><a href="https://github.com/john_doe">Heroes</a>
+                            <ul class="skills">
+                                <p>Heroes description goes here</p>
+                                <li>javascript</li>
+                                <li>angular</li>
+                                <li>angularjs</li>
+                                <li>Angular 2+</li>
+                            </ul>
+                        </li>
+                        <li><a href="https://github.com/john_doe">Heroes</a>
+                            <ul class="skills">
+                                <p>Heroes description goes here</p>
+                                <li>javascript</li>
+                                <li>angular</li>
+                                <li>angularjs</li>
+                            </ul>
+                        </li>
+                        <li><a href="https://github.com/john_doe">Heroes</a>
+                            <ul class="skills">
+                                <p>Heroes description goes here</p>
+                                <li>javascript</li>
+                                <li>angular</li>
+                                <li>angularjs</li>
+                            </ul>
+                        </li>
+                    </div>
+                    <div class="column2">
+                        <li><a href="https://github.com/john_doe">Heroes</a>
+                            <ul class="skills">
+                                <p>Heroes description goes here</p>
+                                <li>javascript</li>
+                                <li>angular</li>
+                                <li>angularjs</li>
+                                <li>Angular 2+</li>
+                            </ul>
+                        </li>
+
+                        <li><a href="https://github.com/john_doe">Heroes</a>
+                            <ul class="skills">
+                                <p>Heroes description goes here</p>
+                                <li>javascript</li>
+                                <li>angular</li>
+                                <li>angularjs</li>
+                                <li>Angular 2+</li>
+                            </ul>
+                        </li>
+                        <li><a href="https://github.com/john_doe">Heroes</a>
+                            <ul class="skills">
+                                <p>Heroes description goes here</p>
+                                <li>javascript</li>
+                                <li>angular</li>
+                                <li>angularjs</li>
+                            </ul>
+                        </li>
+                    </div>
+                </div>
+            </ul>
+            <div class="button-group">
+                <button class="button" disabled>Previous</button>
+                <button class="button">1</button>
+                <button class="button">2</button>
+                <button class="button">3</button>
+                <button class="button">4</button>
+                <button class="button">5</button>
+                <button class="button">6</button>
+                <button class="button">7</button>
+                <button class="button">8</button>
+                <button class="button">9</button>
+                <button class="button">Next</button>
+        </main>
+        </section>
+    </main>
+</body>
+
+</html>

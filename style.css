@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+.icon{
+  width:15px;
+  height:15px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+.column2 {
+  float: left;
+  width: 50%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.Profile{
+  border-style: double;
+  backgruound-color:black;
+  width:200px;
+  height:200px;
+  border-radius:50%;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    width:600px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.skills li {
+    background-color:#0066cc;
+    color: white;
+    width: 80px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px; /* Set the border-radius in pixels */
+    display: inline-block;
+}
+
+ul li {
+     /* Change this to the desired background color */
+    padding: 10px; /* Adjust padding as needed */
+    border: 3px solid #333; /* Add a border for better visibility */
+    border-radius: 5px; 
+  display: inline-block;
+  
+}
+.button-group {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+}
+
+.button {
+  margin:1px;
+ padding: 10px 20px;
+ border-style: 1px solid;
+ cursor: pointer;
+ font-size: 16px;
+ color: #0066cc;
+ background-color: white ;
+}
+
+.button:disabled {
+ background-color: white;
+ cursor: not-allowed;
+  border-style: 1px solid;
+}
+.button:hover{
+  background-color:#0066cc;
+  color:white;
+}
